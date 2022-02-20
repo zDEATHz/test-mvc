@@ -21,8 +21,8 @@
 					<div class="col-sm-5">
 						<div class="basic-login">
 						
-							<!--<form role="form" action="/<?=URL;?>index/<?php echo $pageData['tasks']['id'] ? "edit?id=".$pageData['tasks']['id'] : 'add' ?>" method="post"> -->
-							<form role="form" action="/<?=URL;?>index/<?php echo $pageData['tasks']['id'] ? "edit?id=".$pageData['tasks']['id']."&action=edit" : 'edit?action=add' ?>" method="post">
+							<!--<form role="form" action="/<?=PUBLIC_DIR;?>/index/<?php echo $pageData['tasks']['id'] ? "edit?id=".$pageData['tasks']['id'] : 'add' ?>" method="post"> -->
+							<form role="form" action="<?=URL;?>index/<?php echo $pageData['tasks']['id'] ? "edit?id=".$pageData['tasks']['id']."&action=edit" : 'edit?action=add' ?>" method="post">
 								<div class="form-group">
 		        				 	<label for="register-username"><i class="icon-user"></i> <b>Автор</b></label>
 									<input class="form-control" id="register-username" type="text" name="user" value="<?= $pageData['tasks']['user']; ?>"  placeholder="">

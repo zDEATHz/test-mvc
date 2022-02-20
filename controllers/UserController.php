@@ -22,6 +22,7 @@ class UserController extends Controller {
 				setcookie ("login",$login, time() + 50000, "/");                         
 				setcookie ("password", md5($login.$password), time() + 50000, "/");
 				$this->pageData['message'] = "Авторизация выполнена";
+				$this->pageData['isAdmin'] = true;
 				
 			}
 			else{

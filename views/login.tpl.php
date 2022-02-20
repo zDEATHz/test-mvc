@@ -22,7 +22,7 @@
 							
 							
 							<?php if($pageData['isAdmin'] == true){ ?>
-							<form role="form" role="form" action="/<?=URL;?>user/logout" method="get">
+							<form role="form" role="form" action="<?=URL;?>user/logout" method="get">
 								<div class="form-group">
 								<label for="submit"><i class="icon-lock"></i> <b>Вы авторизованы</b></label>
 									<button id="submit" type="submit" class="btn pull-right">Выйти</button>
@@ -31,7 +31,7 @@
 							</form>
 							<?php } else{ ?>
 							
-							<form role="form" role="form" action="/<?=URL;?>user/login" method="post">
+							<form role="form" role="form" action="<?=URL;?>user/login" method="post">
 								<div class="form-group">
 		        				 	<label for="login-username"><i class="icon-user"></i> <b>Имя</b></label>
 									<input class="form-control" name="login" id="login-username" type="text" placeholder="">

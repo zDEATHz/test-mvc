@@ -1,13 +1,22 @@
 <?php
 
-define("PUBLIC", "/var/www/eapluzhnik.ru/public");
+
 define("ROOT", "/var/www/eapluzhnik.ru");
 define("CONTROLLER_PATH", ROOT. "/controllers/");
 define("MODEL_PATH", ROOT. "/models/");
 define("VIEW_PATH", ROOT. "/views/");
 
-preg_match('([\w\s]+\/)', $_SERVER['PHP_SELF'], $matches);
-define("URL", $matches[0]);
+//preg_match('([\w\s\.]+\/)', $_SERVER['PHP_SELF'], $matches);
+preg_match('([\w\s\/\.]+\/)', $_SERVER['PHP_SELF'], $matches);
+if(isset($matches[0])){
+	define("URL", $matches[0]);
+}
+else{
+	define("URL", '/');
+}
+
+//define("PUBLIC_DIR", URL."public");
+
 
 const DB_USER = "root";
 const DB_PASS = "pwd";

@@ -21,7 +21,7 @@
 					<div class="col-sm-5">
 						<div class="basic-login">
 						
-							<form role="form" action="/<?=URL;?>index/add" method="post">
+							<form role="form" action="<?=URL;?>index/add" method="post">
 								<div class="form-group">
 		        				 	<label for="register-username"><i class="icon-user"></i> <b>Автор</b></label>
 									<input class="form-control" type="text" name="user" value=""  placeholder="">

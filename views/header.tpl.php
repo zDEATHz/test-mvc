@@ -10,28 +10,28 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="/<?=URL;?>assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/<?=URL;?>assets/css/icomoon-social.css">
+        <link rel="stylesheet" href="<?=URL;?>assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?=URL;?>assets/css/icomoon-social.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="/<?=URL;?>assets/css/leaflet.css" />
+        <link rel="stylesheet" href="<?=URL;?>assets/css/leaflet.css" />
 		<!--[if lte IE 8]>
 		    <link rel="stylesheet" href="css/leaflet.ie.css" />
 		<![endif]-->
-		<link rel="stylesheet" href="/<?=URL;?>assets/css/main.css">
+		<link rel="stylesheet" href="<?=URL;?>assets/css/main.css">
 
-        <script src="/<?=URL;?>assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="<?=URL;?>assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		
 		        <!-- Javascripts -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="/<?=URL;?>assets/js/bootstrap.min.js"></script>
+        <script src="<?=URL;?>assets/js/bootstrap.min.js"></script>
         <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
-        <script src="/<?=URL;?>assets/js/jquery.fitvids.js"></script>
-        <script src="/<?=URL;?>assets/js/jquery.sequence-min.js"></script>
-        <script src="/<?=URL;?>assets/js/jquery.bxslider.js"></script>
-        <script src="/<?=URL;?>assets/js/main-menu.js"></script>
-        <script src="/<?=URL;?>assets/js/template.js"></script>
+        <script src="<?=URL;?>assets/js/jquery.fitvids.js"></script>
+        <script src="<?=URL;?>assets/js/jquery.sequence-min.js"></script>
+        <script src="<?=URL;?>assets/js/jquery.bxslider.js"></script>
+        <script src="<?=URL;?>assets/js/main-menu.js"></script>
+        <script src="<?=URL;?>assets/js/template.js"></script>
 		
     </head>
 	
@@ -47,18 +47,18 @@
 					<div class="extras">
 						<ul>
 
-			        		<li><a href="/<?=URL;?>user/login">Login</a></li>
+			        		<li><a href="<?=URL;?>user/login">Login</a></li>
 			        	</ul>
 					</div>
 		        </div>
 		        <nav id="mainmenu" class="mainmenu">
 					<ul>
-						<li class="logo-wrapper"><a href="/<?=URL;?>"><img src="/<?=URL;?>assets/img/mPurpose-logo.png" alt="Multipurpose Twitter Bootstrap Template"></a></li>
+						<li class="logo-wrapper"><a href="<?=URL;?>"><img src="<?=URL;?>assets/img/mPurpose-logo.png" alt="Multipurpose Twitter Bootstrap Template"></a></li>
 						<li class="active">
-							<a href="/<?=URL;?>">Главная</a>
+							<a href="<?=URL;?>">Главная</a>
 						</li>
 						<li>
-							<a href="/<?=URL;?>index/edit">Добавить задачу</a>
+							<a href="<?=URL;?>index/edit">Добавить задачу</a>
 						</li>
 
 					</ul>

@@ -15,7 +15,7 @@
 					<div class="col-sm-12">
 						<div class="error-page-wrapper">
 							<p>Sorry, the page you are looking for is not here or never was...</p>
-							<p>Why don't you try the <a href="/<?=URL;?>">Homepage</a>?</p>
+							<p>Why don't you try the <a href="<?=URL;?>">Homepage</a>?</p>
 						</div>
 					</div>
 				</div>

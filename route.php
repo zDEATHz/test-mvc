@@ -9,8 +9,8 @@ class Routing {
 		$modelName = "Tasks_Model";
 		$action = "index";
 		
-		$url =  preg_match('([\w\s]+\/)', $_SERVER['PHP_SELF'], $matches);
-		$url = str_replace($matches, '', $_SERVER['REQUEST_URI']);
+		$url =  preg_match('([\w\s\/\.]+\/)', $_SERVER['PHP_SELF'], $matches);
+		$url = str_replace($matches, '/', $_SERVER['REQUEST_URI']);
 
 		//$route = explode("/", $_SERVER['REQUEST_URI']);
 		$route = explode("/", $url);
