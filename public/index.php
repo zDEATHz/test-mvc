@@ -4,7 +4,12 @@
 require_once("../conf/config.php");
 
 // Соединяемся с БД
-$dbObject = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USER, DB_PASS);
+
+try {
+        $dbObject = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USER, DB_PASS);
+} catch (PDOException $e) {
+        die('Подключение не удалось: ' . $e->getMessage());
+}
 
 require_once("../route.php");
 require_once MODEL_PATH. 'Model.php';
