@@ -39,7 +39,7 @@ class IndexController extends Controller {
 			$sort=$_COOKIE["sort"];
 		}
 		
-		if($_COOKIE["sort_way"] == "asc"){
+		if( isset($_COOKIE["sort_way"]) && $_COOKIE["sort_way"] == "asc"){
 			$sort_way = "ASC";
 		}
 		else{
